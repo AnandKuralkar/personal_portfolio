@@ -635,18 +635,12 @@
   <section id="contact" class="py-5" style="width: 100%; padding: 60px 0; margin: 0;">
   <div class="container">
     <h2 class="section-heading">Contact Me</h2>
-    <form>
-      <div class="mb-3">
-        <input type="text" class="form-control" placeholder="Your Name">
-      </div>
-      <div class="mb-3">
-        <input type="email" class="form-control" placeholder="Your Email">
-      </div>
-      <div class="mb-3">
-        <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
-      </div>
-      <button type="submit" class="btn btn-accent">Send</button>
-    </form>
+    <form action="https://formspree.io/f/maypwjrn" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
     
   </section>
 
@@ -660,4 +654,5 @@
 </body>
 
 </html>
+
 
