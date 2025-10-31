@@ -297,6 +297,34 @@
       text-align: center;
       padding: 1rem 0;
     }
+  /* Background section styling */
+.resume-section {
+  background: linear-gradient(135deg, #0a84ff, #004aad); /* blue gradient */
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* Button styling */
+.download-btn {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #0a84ff;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 12px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  border: 2px solid #0a84ff;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.download-btn:hover {
+  background-color: #0a84ff;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
     </style>  
 </head>
 
@@ -328,9 +356,14 @@
     <a href="#about" class="btn btn-light btn-lg mt-3">Explore My Work</a>
   </div>
 </section>
-<a href="https://drive.google.com/file/d/1mZlu5Uh-Ao5yd_EgF92Mb4bBtsOx4rm7/view?usp=sharing" download class="btn btn-accent btn-lg mt-3 ms-2">
-  <i class="bi bi-download me-2"></i>Download Resume
-</a>
+<div class="resume-section">
+  <a href="https://drive.google.com/file/d/1mZlu5Uh-Ao5yd_EgF92Mb4bBtsOx4rm7/view?usp=sharing" 
+     download 
+     class="download-btn">
+    <i class="bi bi-download me-2"></i>Download Resume
+  </a>
+</div>
+
  <!-- About Section -->
 <section id="about">
   <div class="container">
@@ -663,6 +696,7 @@
 </body>
 
 </html>
+
 
 
 
